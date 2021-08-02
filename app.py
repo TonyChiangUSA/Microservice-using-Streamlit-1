@@ -16,7 +16,7 @@ def main():
     
     client = bigquery.Client()
     table_id = 'Books.books_title_author'
-    sql = "SELECT * FROM `sue-gcp-learning-env.Books.books_title_author`"
+    sql = "SELECT * FROM `anthos-315008.Books.books_title_author`"
     books_table = client.query(sql).to_dataframe()
     
     if Menu_Choices == "View all Books":
